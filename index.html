@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/0890a76fa0.js" crossorigin="anonymous"></script>
+    <script>
+     tailwind.config = {
+       theme: {
+         extend: {
+           colors: {
+             yellow: '#FFFBF0',
+             green: '#A4BC46',
+           },
+           backgroundImage: {
+        'kitkat': "url('kitkat.jpg')",
+       
+      }
+         }
+       }
+     }
+   </script> 
+    <title>Document</title>
+</head>
+<body >
+    <header class="w-full max-w-5xl mx-auto">
+        <h1 class="text-5xl text-red-600 mx-auto font-semibold text-center drop-shadow-lg mt-3">Valentine Budget</h1>
+    </header>
+
+<main>
+    <section class="w-full max-w-5xl mx-auto mt-5 p-5">
+        <div class="flex gap-4 ">
+           <div class=" mt-1 mx-4 w-full md:w-3/5">
+             <div class=" shadow-lg shadow-lime-500 p-4 m-3 text-center">
+                <div class="bg-[url('./kitkat.jpg')] h-[150px] w-2/4 bg-cover bg-center mx-auto"></div>
+                <h2 class="text-3xl font-semibold py-2">Kitkat</h2>
+                <h2 class="text-2xl font-semibold pb-3 py-1">Price:<span>100</span></h2>
+                <input type="text" placeholder="Type here quantity "  id="kitkat-quantity" class="px-3 py-2 mb-4 border rounded-lg">
+                <button class="text-xl  text-white bg-fuchsia-400  hover:bg-fuchsia-600  font-semibold px-3 py-2 rounded-lg " id="kit-buy">Buy Now</button>
+             </div>
+             <div class=" shadow-lg shadow-lime-500 p-5 m-5 text-center">
+                <div class="bg-[url('./rose.jpg')] h-[150px] w-2/4 bg-cover bg-center mx-auto"></div>
+                <h2 class="text-3xl font-semibold py-2">Rose</h2>
+                <h2 class="text-2xl font-semibold pb-3 py-1">Price:<span>50</span></h2>
+                <input type="text" placeholder="Type here quantity "  id="rose-quantity" class=" border px-3 py-2 mb-4 rounded-lg">
+                <button class="text-xl text-white bg-fuchsia-400  hover:bg-fuchsia-600 font-semibold px-3 py-2 rounded-lg" id="rose-buy">Buy Now</button>
+             </div>
+             <div class=" shadow-lg shadow-lime-500 p-4 m-5 text-center">
+                <div class="bg-[url('./teddy.jpg')] h-[150px] w-2/4 bg-cover bg-center mx-auto"></div>
+                <h2 class="text-3xl font-semibold py-2">Teddy</h2>
+                <h2 class="text-2xl font-semibold pb-3 py-1">Price:<span id="">500</span></h2>
+                <input type="text" placeholder="Type here quantity " id="teddy-quantity" class=" border px-3 py-2 mb-4 rounded-lg">
+                <button class="text-xl text-white bg-fuchsia-400 hover:bg-fuchsia-600  font-semibold px-3 py-2 rounded-lg"  id="teddy-buy">Buy Now</button>
+             </div>
+           </div>
+           <div  class=" shadow-lg shadow-lime-500 mt-3 px-12 py-9 text-center w-full md:w-9/12">
+             <h2 class="text-3xl font-semibold pb-4 py-5">Chocolate:<span id="kitkat">00</span></h2>
+             <div  class="h-1 w-full pb-1 bg-slate-300"></div>
+             <h2 class="text-3xl font-semibold pb-4 py-5" >Rose:<span id="rose">00</span></h2>
+             <div  class="h-1 w-full pb-1 bg-slate-300"></div>
+             <h2 class="text-3xl font-semibold pb-4 py-5"  >Teddy:<span id="teddy">00</span></h2>
+             <div  class="h-1 w-full pb-1 bg-slate-300"></div>
+             <h2 class="text-3xl font-semibold pb-4 py-5" >Total:<span id="total">00</span></h2>
+             <h3 class="bg-lime-600 font-bold pb-3 mb-5">Use Promo Code For 10% Discount</h3>
+             <!-- <div class="flex  gap-1 bg-black p-3"> -->
+                <input type="text" placeholder="101 " class=" border px-3 py-3 mb-4 rounded-lg " id="code">
+             <button class=" text-white bg-red-400 hover:bg-red-600  font-bold px-3 py-3 rounded-lg  " id="apply-btn">Apply</button>
+             <!-- </div> -->
+             <h3 class="font-semibold text-2xl mt-3">All COST: <span id="cost">00</span></h3>
+           </div>
+        </div>
+    </section>
+</main>
+<script src="./index.js"></script>
+</body>
+</html>
