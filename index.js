@@ -26,7 +26,7 @@ function getInputbyId(inputId, price){
     }
 
     const totalprice=inputValue*price;
-    document.getElementById(inputId).value=" ";
+    // document.getElementById(inputId).value=" ";
     return totalprice;
 }
 
